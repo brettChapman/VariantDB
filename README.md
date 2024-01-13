@@ -62,7 +62,7 @@ From the command line:
 
 	```console
 	conda env create -f environment_step1.yml
-	```console
+	```
 
 	This will set up the initial environment.
 
@@ -162,16 +162,21 @@ From the command line:
 Note: If running from a Docker container, when setting any folder paths it would be best to place the gnomad SQLite database file within the VariantDB folder or within a sub folder. This is because of the mounted paths and the differences between directory structures between the Docker container and Windows.
 
 ### Step 1. Download Clinvar DB
-	Run the Jupyter notebook download_clinvar.ipynb
+
+Run the Jupyter notebook download_clinvar.ipynb
 
 ### Step 2. Download gnomAD
-	Run the the Jupyter notebook download_gnomad.ipynb.
-	Note: You need to specify a download location for the gnomad SQLite database and will need at least 100Gb of space. If downloading within a Docker container, then it would be best to save the database in the VariantDB folder, or a sub folder such as VariantDB/gnomad_db/.
+
+Run the the Jupyter notebook download_gnomad.ipynb.
+
+Note: You need to specify a download location for the gnomad SQLite database and will need at least 100Gb of space. If downloading within a Docker container, then it would be best to save the database in the VariantDB folder, or a sub folder such as VariantDB/gnomad_db/.
 
 ### Step 3. Run variantdb_parser.
-	Place all input CSV files into the input_csv folder. Specify the location of gnomad database, internal database CSV, and genes of interest CSV file. The annotated CSV files will be generated and placed in the output_annotated_csv folder.
+
+Place all input CSV files into the input_csv folder. Specify the location of gnomad database, internal database CSV, and genes of interest CSV file. The annotated CSV files will be generated and placed in the output_annotated_csv folder.
 
 ### Step 4. Run variant_compare.
-	Specify the couples CSV pairing file in the input_couples_csv folder. Each paired annotated CSV file from the output_annotated_csv folder, will then be compared and a couples report generated in the output_couples_report folder.
 
-## TODO write wrapper script with parameter lists to streamline the whole interface
+Specify the couples CSV pairing file in the input_couples_csv folder. Each paired annotated CSV file from the output_annotated_csv folder, will then be compared and a couples report generated in the output_couples_report folder.
+
+#### TODO write wrapper script with parameter lists to streamline the whole interface
