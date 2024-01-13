@@ -157,7 +157,9 @@ From the command line:
 
 1.	After exiting the docker container, as described above, from the Docker GUI, select the installed container and then select delete.
 
-## Running the workflows
+<br />
+
+## Running VariantDB workflows
 
 Note: If running from a Docker container, when setting any folder paths it would be best to place the gnomad SQLite database file within the VariantDB folder or within a sub folder. This is because of the mounted paths and the differences between directory structures between the Docker container and Windows.
 
@@ -165,7 +167,7 @@ Note: If running from a Docker container, when setting any folder paths it would
 
 Run the Jupyter notebook download_clinvar.ipynb
 
-### Step 2. Download gnomAD
+### Step 2. Download gnomAD DB
 
 Run the the Jupyter notebook download_gnomad.ipynb.
 
