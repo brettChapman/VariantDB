@@ -1,0 +1,14 @@
+name: VariantDB
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python=3.11.4
+- jupyter=1.0.0
+- notebook=6.5.4
+- numpy=1.25.2
+- pandas=2.1.0
+- natsort=8.4.0
+- hdbscan=0.8.33
+- pip=23.2.1
+

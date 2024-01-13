@@ -1,0 +1,16 @@
+name: VariantDB
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python=3.11.4
+- jupyter=1.0.0
+- notebook=6.5.4
+- numpy=1.25.2
+- pandas=2.1.0
+- natsort=8.4.0
+- pip=23.2.1
+- pip:
+  - number-parser==0.3.2
+  - gnomad==0.6.4
+  - gnomad-db==0.1.2
